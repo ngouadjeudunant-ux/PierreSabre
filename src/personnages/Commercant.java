@@ -11,12 +11,12 @@ public class Commercant extends Humain {
 		int sommeExtorquee = getQuantiteArgent(); 
 		perdreArgent(sommeExtorquee); 
 		System.out.println(parler("J'ai tout perdu! Le monde est trop injuste..."));
-		return getQuantiteArgent(); 
+		return sommeExtorquee; 
 	}
 	
 	public void recevoir(int argent) {
 		gagnerArgent(argent);
-		System.out.println(parler(argent + " sous! Je te remercie généreux donateur!"));
+		System.out.println(parler(argent + " sous ! Je te remercie généreux donateur!"));
 	}
 	
 
